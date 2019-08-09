@@ -1,0 +1,122 @@
+$rubik-font: "Rubik", sans-serif;
+
+$lightGrey: rgb(195, 208, 224);
+$darkBlue: #5c00fd;
+$lightBlue: rgb(55, 71, 87);
+$lightGreyBG: rgb(236, 239, 244);
+$white: #ffffff;
+$black: #000000;
+
+$activeBgc: #c9bcfe;
+$bodyBgc: #f4f4fc;
+
+// semantic-ui button color modifiers
+$primary-color: #ffffff;
+$primary-bg: #2e5bff;
+$secondary-color: #2e5bff;
+$secondary-bg: #d5deff;
+
+// semantic-ui field
+$label-color: #b0bac9;
+
+$active: #2e5bff;
+$inactive: #bdc1d1;
+$text: #404459;
+$subtext: #8796ad;
+
+$info: #2e5bff;
+$success: #00c13a;
+$error: #ed0046;
+$simple: #d5d5ff;
+$link: #6823fd;
+
+// icons
+$euroBgc: #bdf6f6;
+$eurFill: #00cbd6;
+$stopBgc: #ffd1da;
+$stopFill: #d30048;
+$checkBgc: #caf5d5;
+$checkFill: #00c13a;
+$userFill: #8c54ff;
+$userBgc: #ececff;
+$speechBubbleFill: #15b3c5;
+$speechBubbleBgc: #d9f6f9;
+
+@mixin heading {
+  color: $subtext;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: $rubik-font;
+}
+
+@mixin infoButton {
+  background-color: $info;
+  color: $white;
+  padding: 9px 23px;
+  transition: 0.3s transform;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+@mixin successButton {
+  background-color: $success;
+  color: $white;
+  padding: 9px 23px;
+  transition: 0.3s transform;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+@mixin simpleButton {
+  background-color: $simple;
+  color: $info;
+  padding: 9px 23px;
+  transition: 0.3s transform;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+@mixin disableButton {
+  background-color: $simple;
+  color: $info;
+  padding: 9px 23px;
+  transition: 0.3s transform;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+@mixin flex {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin borders {
+  border: 1px solid $active;
+  border-radius: 8px;
+}
+
+@mixin block {
+  @include borders;
+  padding: 34px 24px;
+  background-color: $white;
+}

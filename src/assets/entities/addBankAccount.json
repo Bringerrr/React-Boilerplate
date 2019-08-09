@@ -1,0 +1,31 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/activitystreams",
+    "http://schema.org",
+    "https://test.coneix.io/security/v1"
+  ],
+  "@type": "Add",
+  "actor": {
+    "@type": "Person",
+    "@id": "https://test.coneix.io/users/17",
+    "hash": "8e657aea6e5b81b96f0bfadfd5cd671d05db89e592c531e2e3e9f270bfc8772c",
+    "name": "John Doe",
+    "email": "employee@gmail.com"
+  },
+  "object": {
+    "@type": "BankAccount",
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "IBAN",
+      "value": "FR7630001007941234567890185"
+    },
+    "hash": "cce66316b4c1c59df94a35afb80cecd82d1a8d91b554022557e115f5c275f515"
+  },
+  "previous": "https://test.coneix.io/activities/04b14ded5783eeb77592a8e7f28291248f87056e803427c3917211e2b185d2bf",
+  "signature": {
+    "@type": "Signature2019",
+    "creator": "https://test.coneix.io/users/17#key-1",
+    "created": "2019-05-25T16:59:08",
+    "signatureValue": "dmVyeSBzZWN1cmUgc2lnbmF0dXJl"
+  }
+}

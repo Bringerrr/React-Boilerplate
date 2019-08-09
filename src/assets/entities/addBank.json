@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "http://schema.org",
+    "https://www.w3.org/ns/activitystreams",
+    "https://test.coneix.io/security/v1"
+  ],
+  "@type": "Add",
+  "actor": {
+    "@type": "Person",
+    "@id": "https://test.coneix.io/users/17",
+    "hash": "8e657aea6e5b81b96f0bfadfd5cd671d05db89e592c531e2e3e9f270bfc8772c",
+    "name": "John Doe",
+    "email": "employee@gmail.com"
+  },
+  "object": {
+    "@type": "BankOrCreditUnion",
+    "@id": "https://test.coneix.io/banks/bnpafrpptas",
+    "hash": "41bfd5021782b32f1bb3ba06242a6ebc78b5a3882aa90f31e4285af52f053eb0",
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "BIC",
+      "value": "BNPAFRPPTAS"
+    }
+  },
+  "previous": "https://test.coneix.io/activities/7fa8fccac14a4dcb2e65c439fa5ceb0f704b9ff67ed09df7c7123353265f831c",
+  "signature": {
+    "@type": "Signature2019",
+    "creator": "https://test.coneix.io/users/17#key-1",
+    "created": "2019-05-25T16:59:08",
+    "signatureValue": "dmVyeSBzZWN1cmUgc2lnbmF0dXJl"
+  }
+}

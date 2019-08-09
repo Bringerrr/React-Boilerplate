@@ -1,0 +1,28 @@
+.VisualData {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+
+  .EntitySelector {
+    width: 28%;
+  }
+
+  .ui.segment.VisualData_Container {
+    width: 70%;
+  }
+
+  .ui.list .list > .item .header,
+  .ui.list > .item .header {
+    display: inline-block;
+  }
+  .ui.list > .item .description.row {
+    display: inline-block;
+  }
+
+  .ui.selection.dropdown {
+    display: block;
+    width: 200px;
+  }
+}

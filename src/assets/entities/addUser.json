@@ -1,0 +1,44 @@
+{
+  "@context": [
+    "http://schema.org",
+    "http://www.w3.org/ns/activitystreams",
+    "https://test.coneix.io/security/v1"
+  ],
+  "@type": "Add",
+  "actor": {
+    "@type": "Person",
+    "@id": "https://test.coneix.io/users/17",
+    "hash": "8e657aea6e5b81b96f0bfadfd5cd671d05db89e592c531e2e3e9f270bfc8772c",
+    "name": "John Doe",
+    "email": "employee@gmail.com"
+  },
+  "object": {
+    "@type": "Person",
+    "@id": "https://test.coneix.io/users/56",
+    "name": "admin",
+    "address": {
+      "@type": "PostalAddress",
+      "postOfficeBoxNumber": "123",
+      "streetAddress": "7 S. Broadway",
+      "postalCode": "80209",
+      "addressLocality": "Denver",
+      "addressRegion": "CO",
+      "addressCountry": "USA"
+    },
+    "email": "admin@coneix.io",
+    "telephone": "+336 68440368",
+    "familyName": "Viaud-Murat",
+    "givenName": "Franz",
+    "identifier": "mpl-624",
+    "knowsLanguage": "fr-FR",
+    "gender": "Male",
+    "hash": "83e34d9f98b4c1886762cd505f67c81fe7763ded7d57e169776063c9e6bbcc77"
+  },
+  "previous": "https://test.coneix.io/activities/9a3a33b6961ca5154a119325be1947a7b2f6968062998d58fdf27481412fa258",
+  "signature": {
+    "@type": "Signature2019",
+    "creator": "https://test.coneix.io/users/17#key-1",
+    "created": "2019-05-25T16:59:08",
+    "signatureValue": "dmVyeSBzZWN1cmUgc2lnbmF0dXJl"
+  }
+}

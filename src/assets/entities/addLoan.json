@@ -1,0 +1,33 @@
+{
+  "@context": [
+    "http://schema.org",
+    "http://www.w3.org/ns/activitystreams",
+    "https://test.coneix.io/security/v1"
+  ],
+  "@type": "Add",
+  "actor": {
+    "@type": "Person",
+    "@id": "https://test.coneix.io/users/17",
+    "hash": "8e657aea6e5b81b96f0bfadfd5cd671d05db89e592c531e2e3e9f270bfc8772c",
+    "name": "John Doe",
+    "email": "employee@gmail.com"
+  },
+  "object": {
+    "@type": "LoanOrCredit",
+    "@id": "https://test.coneix.io/loans/1",
+    "name": "name",
+    "loanType": "loanType",
+    "category": "category",
+    "amount": 1523647,
+    "currency": "EUR",
+    "identifier": "mpl-624",
+    "hash": "9b0e87c8a06b0649e2471b68f5ef55ec345e4d1772be8e77fb6d9990b4c2cf7f"
+  },
+  "previous": "https://test.coneix.io/activities/7e5d95c474c000dd8181d43436ad53c46c6cae3f48425390a933f83c90c79641",
+  "signature": {
+    "@type": "Signature2019",
+    "creator": "https://test.coneix.io/users/17#key-1",
+    "created": "2019-05-25T16:59:08",
+    "signatureValue": "dmVyeSBzZWN1cmUgc2lnbmF0dXJl"
+  }
+}

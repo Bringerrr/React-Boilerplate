@@ -1,0 +1,7 @@
+### VS Code ###
+.vscode/
+/server/bin
+
+### Client ###
+node_modules
+build

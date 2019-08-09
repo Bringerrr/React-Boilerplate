@@ -1,0 +1,141 @@
+@import "../../../variables.scss";
+
+$offset: 11px;
+
+.Table_Button-Container {
+  position: relative;
+  width: 100%;
+  height: 36px;
+}
+
+.PaymentRequestsInfo-Container {
+  border: 1px solid $active;
+  border-radius: 6px;
+  padding: 25px;
+  background-color: $white;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+
+  .UserInfo_Header {
+    @include heading;
+  }
+
+  .UserInfo_Block {
+    margin-top: 30px;
+  }
+
+  .PaymentRequestsInfo_ButtonContainer {
+    .ButtonContainer_Button {
+      width: 100%;
+      margin-bottom: 9px;
+    }
+
+    .Active-Button {
+      @include successButton;
+    }
+
+    .Simple-Button {
+      @include simpleButton;
+    }
+  }
+
+  .PaymentRequestsInfo_UserInfo {
+    .UserInfo_Top {
+      display: flex;
+      margin: $offset 0;
+
+      .Top_Avatar {
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      .UserInfo-Top_LeftBlock {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10px;
+
+        .Top_UserName {
+          font-size: 1rem;
+          font-weight: bold;
+          margin: 0;
+        }
+
+        .Top_Interactions {
+          color: $subtext;
+        }
+      }
+    }
+
+    .UserInfo_Bottom {
+      font-size: 0.83rem;
+    }
+  }
+
+  .UserInfo_Interactions {
+    .Interactions_List {
+      .Mail {
+        background-color: $inactive;
+
+        & > svg {
+          fill: $info;
+        }
+      }
+
+      .Euro {
+        background-color: $euroBgc;
+
+        & > svg {
+          fill: $eurFill;
+        }
+      }
+
+      .Stop {
+        background-color: $stopBgc;
+
+        & > svg {
+          fill: $stopFill;
+        }
+      }
+
+      .Checked {
+        background-color: $checkBgc;
+
+        & > svg {
+          fill: $checkFill;
+        }
+      }
+
+      .Intaraction_Item {
+        display: flex;
+        margin-top: $offset;
+
+        .Item_Image {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          align-self: baseline;
+          padding: 6px;
+
+          & > svg {
+            width: 14px;
+            height: 14px;
+          }
+        }
+
+        .Intaraction_Text {
+          font-weight: normal;
+          text-transform: capitalize;
+          align-self: center;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

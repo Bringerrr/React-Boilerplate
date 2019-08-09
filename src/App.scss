@@ -1,0 +1,124 @@
+@import "variables.scss";
+
+* {
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+.App {
+  font-family: $rubik-font;
+  background-color: #f4f6fc;
+  display: flex;
+  widows: 100%;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: $rubik-font;
+  }
+
+  .App-Main {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  .App-Container {
+    padding-top: 64px;
+    flex: 1;
+    transition: content 3s;
+  }
+
+  .MainHeader {
+    position: fixed;
+    width: 100%;
+    background-color: $white;
+    z-index: 10;
+    padding: 0px 20px 0px 240px;
+    height: 80px;
+    border-bottom: 1px solid $inactive;
+
+    .UserName_DropDown {
+      display: inline-flex;
+      align-items: center;
+
+      .DropDown_PictureBorder {
+        display: inline-block;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 40px;
+        height: 40px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .NavList {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+
+      .nav-item svg {
+        width: 20px;
+        fill: black;
+      }
+    }
+
+    & a {
+      color: $black;
+      font-weight: bold;
+    }
+
+    .ui.dropdown .menu {
+      left: auto;
+      right: 0;
+
+      div {
+        text-align: right;
+
+        a {
+          font-weight: normal;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  .routes {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding-top: 81px;
+
+    & > div {
+    }
+  }
+
+  .ui.container {
+    -webkit-transition: width 0.3s;
+    transition: width 0.3s;
+  }
+}

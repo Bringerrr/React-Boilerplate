@@ -1,0 +1,61 @@
+{
+  "@context": [
+    "http://schema.org",
+    "http://www.w3.org/ns/activitystreams",
+    "https://test.coneix.io/security/v1"
+  ],
+  "@type": "Add",
+  "actor": {
+    "@type": "Service",
+    "@id": "https://test.coneix.io/services/payment"
+  },
+  "object": {
+    "@type": "MoneyTransfer",
+    "@id": "https://test.coneix.io/payments/1",
+    "amount": {
+      "@type": "MonetaryAmount",
+      "currency": "EUR",
+      "value": 35500
+    },
+    "beneficiaryBank": {
+      "@id": "https://test.coneix.io/banks/bnpafrpptas",
+      "@type": "BankOrCreditUnion",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "BIC",
+        "value": "BNPAFRPPTAS"
+      }
+    }
+  },
+  "target": {
+    "@type": "BankAccount",
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "IBAN",
+      "value": "FR7630001007941234567890185"
+    }
+  },
+  "context": {
+    "@type": "LoanOrCredit",
+    "@id": "https://test.coneix.io/loans/152",
+    "loanType": "mortgage",
+    "amount": 355000,
+    "currency": "EUR",
+    "hash": "4ea9999731951e5e6e43d49ed40500f3"
+  },
+  "inReplyTo": {
+    "@type": "PaymentRequest",
+    "amount": 355000,
+    "currency": "EUR",
+    "expectedDate": "2019-08-01T06:00:00.2",
+    "hash": "3097f3661023c82c104d6e86a5bd290f230eb739e44f6e6c4cb285c25a76df43"
+  },
+  "endTime": "2019-08-01T05:00:17.4",
+  "previous": "https://test.coneix.io/activities/761e572b250d0dccad68518211eb5ce95527c9784a589dc26843c14ab4dfd339",
+  "signature": {
+    "@type": "Signature2019",
+    "creator": "https://test.coneix.io/services/payment#key-1",
+    "created": "2019-05-25T16:59:08",
+    "signatureValue": "dmVyeSBzZWN1cmUgc2lnbmF0dXJl"
+  }
+}

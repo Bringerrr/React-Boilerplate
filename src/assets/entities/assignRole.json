@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "http://schema.org",
+    "http://www.w3.org/ns/activitystreams",
+    "https://test.coneix.io/security/v1"
+  ],
+  "@type": "Assign",
+  "actor": {
+    "@type": "Person",
+    "@id": "https://test.coneix.io/users/17",
+    "hash": "8e657aea6e5b81b96f0bfadfd5cd671d05db89e592c531e2e3e9f270bfc8772c",
+    "name": "John Doe",
+    "email": "employee@gmail.com"
+  },
+  "object": {
+    "@type": "Role",
+    "@id": "https://test.coneix.io/loans/1",
+    "name": "Notary",
+    "hash": "2a1db49adbe0e8281c0615f68e6829ddf9de3c315b8329481181ac65bea47e3b"
+  },
+  "target": {
+    "@type": "Person",
+    "@id": "https://test.coneix.io/people/jim",
+    "name": "Jim",
+    "hash": "8a798890fe93817163b10b5f7bd2ca4d25d84c52739a645a889c173eee7d9d3d"
+  },
+  "context": {
+    "@type": "LoanOrCredit",
+    "@id": "https://test.coneix.io/loans/152",
+    "loanType": "mortgage",
+    "amount": 355000,
+    "currency": "EUR",
+    "hash": "9b0e87c8a06b0649e2471b68f5ef55ec345e4d1772be8e77fb6d9990b4c2cf7f"
+  },
+  "previous": "https://test.coneix.io/activities/bab884d3ed912f33f7c6b62a49e76808c2b0fec10529cb1f88b8c8904f0e5cd0",
+  "signature": {
+    "@type": "Signature2019",
+    "creator": "https://test.coneix.io/users/17#key-1",
+    "created": "2019-05-25T16:59:08",
+    "signatureValue": "dmVyeSBzZWN1cmUgc2lnbmF0dXJl"
+  }
+}

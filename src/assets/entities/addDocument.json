@@ -1,0 +1,28 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/activitystreams",
+    "http://schema.org",
+    "https://test.coneix.io/security/v1"
+  ],
+  "@type": "Add",
+  "actor": {
+    "@type": "Person",
+    "@id": "https://test.coneix.io/users/17",
+    "hash": "8e657aea6e5b81b96f0bfadfd5cd671d05db89e592c531e2e3e9f270bfc8772c",
+    "name": "John Doe",
+    "email": "employee@gmail.com"
+  },
+  "object": {
+    "type": "Document",
+    "name": "4Q Sales Forecast",
+    "hash": "19aa8c53de7a9fb7e5803482b299825966f91643e964496a44eb3a77c59157d9",
+    "url": "http://example.org/4q-sales-forecast.pdf"
+  },
+  "previous": "https://test.coneix.io/activities/be08ba9e4109e61c3cc9efa9ffb2cea95c20d2756f7ea9187b35d89196a32479",
+  "signature": {
+    "@type": "Signature2019",
+    "creator": "https://test.coneix.io/users/17#key-1",
+    "created": "2019-05-25T16:59:08",
+    "signatureValue": "dmVyeSBzZWN1cmUgc2lnbmF0dXJl"
+  }
+}

@@ -1,0 +1,144 @@
+@import "variables.scss";
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700");
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: -apple-system, BlinkMacSystemFont, "Rubik", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Rubik", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.Form-Field {
+  margin-bottom: 18px;
+}
+
+.themed-ui {
+  .ui.selection.dropdown {
+    min-width: 0;
+  }
+
+  .PaymentRequestInfoEdit {
+    .ui.form .fields {
+      flex-wrap: wrap;
+      justify-content: center;
+      & > div {
+        margin-top: 10px !important;
+        @media (max-width: 1420px) {
+          width: 100%;
+          & > button {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .ui.button {
+    font-weight: 600;
+    padding: 9px 23px;
+    transition-duration: 0.1s;
+    transition-property: transform;
+    font-family: "Rubik", sans-serif;
+
+    &.primary {
+      background-color: $primary-bg;
+      color: $primary-color;
+
+      &:hover {
+        background-color: darken($primary-bg, 15%);
+      }
+    }
+
+    &.secondary {
+      background-color: $secondary-bg;
+      color: $secondary-color;
+
+      &:hover {
+        background-color: darken($secondary-bg, 15%);
+        color: darken($secondary-color, 15%);
+      }
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+
+  .ui {
+    padding: 0;
+  }
+
+  .ui.grid {
+    margin: 0;
+  }
+  .ui.form .field label,
+  .ui.label {
+    color: $label-color;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.83rem;
+    letter-spacing: 0.02rem;
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .ui.modal {
+    .header {
+      font-family: $rubik-font;
+      font-weight: 400;
+      font-size: 1.4rem;
+    }
+  }
+
+  .ui.segment {
+    width: 100%;
+    padding: 24px 24px;
+    border: 1px solid #2e5bff;
+    margin: 0;
+  }
+
+  .block {
+    @include block;
+  }
+
+  .form-footer {
+    padding-top: 24px;
+  }
+
+  .ui.container {
+    @media (min-width: 992px) and (max-width: 1100px) {
+      width: 903px;
+    }
+
+    @media (min-width: 1100px) and (max-width: 1300px) {
+      width: 980px;
+    }
+
+    @media (min-width: 1300px) and (max-width: 1399px) {
+      width: 1140px;
+    }
+
+    @media (min-width: 1400px) and (max-width: 1849px) {
+      width: 1200px;
+    }
+
+    @media (min-width: 1850px) {
+      width: 1400px;
+    }
+  }
+}

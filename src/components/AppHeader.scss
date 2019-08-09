@@ -1,0 +1,56 @@
+@import "../variables";
+
+.AppHeader {
+  box-sizing: content-box;
+  height: 80px;
+  background: #fff;
+  border-bottom: 1px solid #e4e8f0;;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    flex-direction: row;
+
+    .AppHeader-Brand {
+      display: inline-block;
+      padding: 20px;
+      margin-left: -20px;
+      width: auto;
+      height: 80px;
+      font-size: 20px;
+      color: black;
+      line-height: 40px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .AppHeader-Controls {
+      padding: 12px;
+      margin-right: -10px;
+      display: flex;
+      flex-direction: row;
+
+      .AppHeader-Button {
+        box-sizing: content-box;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        padding: 8px 0 8px 8px;
+
+        .MailIcon {
+          vertical-align: middle;
+          height: 22px;
+          width: 27px;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
